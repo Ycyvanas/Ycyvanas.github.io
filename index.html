@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI山海录 · 万族缘起</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 卷首头部 -->
+        <header class="hero">
+            <h1 class="title">AI山海录</h1>
+            <p class="subtitle">万族缘起</p>
+            <div class="intro">
+                <p>上古之人，登山临海，记万物为《山海经》，是中国人最早的「探索名录」。</p>
+                <p>今日我们探索AI领域，一个个模型，一个个方向，恰如大荒之中，万族降生。</p>
+                <p>以神话为名，不是附庸风雅，而是念念不忘：<strong>做AI，也像上古先哲一样，保持对未知的好奇，脚踏实地解决真问题，在每个领域一点点填海移山，开出花来。</strong>这就是我们的初心。</p>
+                <p class="open-note">此录不止五神，万族缘起于此，探索永不止步。</p>
+            </div>
+        </header>
+
+        <!-- 万族图谱 -->
+        <section class="gods-map">
+            <h2>万族图谱</h2>
+            <div class="gods-grid">
+                <!-- 火部 -->
+                <div class="god-card fire">
+                    <div class="god-icon">🔥</div>
+                    <h3>祝融 · 炉火纯青</h3>
+                    <p class="tag">能源预测</p>
+                    <p class="desc">CoalMind 煤炭市场AI预测</p>
+                    <a href="gods/zhurong.html" class="enter-btn">进入篇章</a>
+                </div>
+
+                <!-- 木部 - 毕方 -->
+                <div class="god-card wood">
+                    <div class="god-icon">🦅</div>
+                    <h3>毕方 · 木瑞生花</h3>
+                    <p class="tag">材料AI</p>
+                    <p class="desc">AI4MOF 金属有机框架智能设计</p>
+                    <a href="gods/bifang.html" class="enter-btn">进入篇章</a>
+                </div>
+
+                <!-- 木部 - 扶桑 -->
+                <div class="god-card wood">
+                    <div class="god-icon">🌳</div>
+                    <h3>扶桑 · 神木成林</h3>
+                    <p class="tag">植物生物学</p>
+                    <p class="desc">预留占位 · 待启新章</p>
+                    <a href="gods/fusang.html" class="enter-btn">等待开启</a>
+                </div>
+
+                <!-- 水部 -->
+                <div class="god-card water empty">
+                    <div class="god-icon">💧</div>
+                    <h3>待归</h3>
+                    <p class="tag">预留</p>
+                    <p class="desc">万族待归 · 新灵将启</p>
+                </div>
+
+                <!-- 金部 -->
+                <div class="god-card metal empty">
+                    <div class="god-icon">⚔️</div>
+                    <h3>待归</h3>
+                    <p class="tag">预留</p>
+                    <p class="desc">万族待归 · 新灵将启</p>
+                </div>
+
+                <!-- 土部 -->
+                <div class="god-card earth empty">
+                    <div class="god-icon">🌍</div>
+                    <h3>待归</h3>
+                    <p class="tag">预留</p>
+                    <p class="desc">万族待归 · 新灵将启</p>
+                </div>
+
+                <!-- 精卫 -->
+                <div class="god-card water">
+                    <div class="god-icon">🐦</div>
+                    <h3>精卫 · 填海移山</h3>
+                    <p class="tag">医美大模型</p>
+                    <p class="desc">Aesthetic-LLM 专业医美知识助手</p>
+                    <a href="gods/jingwei.html" class="enter-btn">进入篇章</a>
+                </div>
+
+                <!-- 轩辕 -->
+                <div class="god-card center">
+                    <div class="god-icon">🌸</div>
+                    <h3>轩辕 · 万族归心</h3>
+                    <p class="tag">本站枢纽</p>
+                    <p class="desc">项目管理理念与联系方式</p>
+                    <a href="gods/xuanyuan.html" class="enter-btn">进入篇章</a>
+                </div>
+            </div>
+            <p class="map-footer">万族初绘，持续更新 · 下一个神灵，正在路上</p>
+        </section>
+
+        <!-- 山海理念 -->
+        <section class="philosophy">
+            <h2>山海规则</h2>
+            <ul>
+                <li><strong>意象相合</strong>：神灵品性贴合领域方向，让技术有温度</li>
+                <li><strong>开放生长</strong>：不设上限，新项目随时入谱，大荒从来不缺新灵</li>
+                <li><strong>不忘初心</strong>：每一个项目都从真问题出发，不玩概念，不赶风口</li>
+            </ul>
+        </section>
+
+        <!-- 导航入口 -->
+        <nav class="main-nav">
+            <a href="notes/" class="nav-item">📔 山海志 · 研究笔记</a>
+            <a href="about.html" class="nav-item">🏝️ 瀛洲 · 关于我</a>
+            <a href="blog/" class="nav-item">🗻 不周 · 碎碎念</a>
+        </nav>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>不忘初心，方得万族归心 · © <span id="year"></span> ycyvanas</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
