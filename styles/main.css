@@ -121,7 +121,7 @@ body {
     text-align: center;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    min-height: 280px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
