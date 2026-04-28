@@ -121,6 +121,10 @@ body {
     text-align: center;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .god-card:hover {
@@ -135,12 +139,14 @@ body {
 
 .god-icon {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .god-card h3 {
     font-size: 1.3rem;
     margin-bottom: 8px;
+    flex-shrink: 0;
 }
 
 .god-card .tag {
@@ -149,12 +155,17 @@ body {
     border-radius: 12px;
     font-size: 0.85rem;
     margin-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .god-card .desc {
     color: var(--secondary-text);
     font-size: 0.95rem;
     margin-bottom: 15px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .enter-btn {
@@ -203,12 +214,6 @@ body {
     border-color: var(--center);
     color: var(--center);
     background-color: var(--center-light);
-    grid-column: span 2;
-}
-@media (max-width: 768px) {
-    .god-card.center {
-        grid-column: span 1;
-    }
 }
 
 .map-footer {
