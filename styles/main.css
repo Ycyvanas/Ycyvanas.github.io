@@ -387,11 +387,28 @@ blockquote {
         font-size: 2.5rem;
         letter-spacing: 0.2rem;
     }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    .intro {
+        font-size: 1rem;
+    }
+    .hero {
+        padding: 20px 0 40px;
+        margin-bottom: 40px;
+    }
     .container {
         padding: 20px 15px;
     }
     .philosophy {
         padding: 25px 20px;
+        margin-bottom: 40px;
+    }
+    .philosophy h2 {
+        font-size: 1.5rem;
+    }
+    .gods-map h2 {
+        font-size: 1.6rem;
     }
     .god-content {
         padding: 25px 20px;
@@ -405,11 +422,45 @@ blockquote {
     .god-card {
         padding: 25px 15px;
     }
+    .main-nav {
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .nav-item {
+        padding: 8px 20px;
+        font-size: 0.95rem;
+    }
 }
 @media (max-width: 480px) {
     .title {
         font-size: 2rem;
         letter-spacing: 0.1rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .intro {
+        font-size: 0.95rem;
+    }
+    .hero {
+        padding: 10px 0 30px;
+        margin-bottom: 30px;
+    }
+    .gods-map h2 {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+    }
+    .philosophy {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+    .philosophy h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .philosophy li {
+        font-size: 0.95rem;
     }
     .god-icon {
         font-size: 3rem;
@@ -420,5 +471,18 @@ blockquote {
     .god-card {
         padding: 30px 20px;
         aspect-ratio: 2 / 1;
+    }
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .god-header h1 {
+        font-size: 1.8rem;
+    }
+    .god-header .god-icon {
+        font-size: 3.5rem;
     }
 }
