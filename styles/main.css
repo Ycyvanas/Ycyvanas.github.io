@@ -381,35 +381,6 @@ blockquote {
     color: var(--water);
 }
 
-/* 引脚接线表 */
-.god-content table.pin-table {
-    width: 100%;
-    max-width: 450px;
-    border-collapse: collapse;
-    margin: 15px 0 25px;
-    font-size: 0.95rem;
-}
-.god-content table.pin-table th,
-.god-content table.pin-table td {
-    padding: 8px 16px;
-    border: 1px solid var(--border-color);
-    text-align: left;
-}
-.god-content table.pin-table th {
-    background: var(--metal-light);
-    font-weight: 600;
-}
-.god-content table.pin-table td:first-child {
-    font-weight: 500;
-}
-.god-content table.pin-table td:last-child {
-    font-family: "Courier New", monospace;
-    color: var(--water);
-}
-.god-content table.pin-table tr:nth-child(even) {
-    background: rgba(0,0,0,0.02);
-}
-
 /* 响应式 */
 @media (max-width: 768px) {
     .title {

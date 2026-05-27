@@ -112,30 +112,6 @@
                 <li>⏳ 传感器网络与多设备协同</li>
             </ul>
 
-            <h2>参考接线</h2>
-
-            <h3>🎤 INMP441 → ESP32-S3-CAM</h3>
-            <table class="pin-table">
-                <tr><th>INMP441</th><th>ESP32-S3-CAM</th></tr>
-                <tr><td>VDD</td><td>3.3V</td></tr>
-                <tr><td>GND</td><td>GND</td></tr>
-                <tr><td>L/R</td><td>GND（左声道）</td></tr>
-                <tr><td>SD (数据)</td><td>GPIO 39</td></tr>
-                <tr><td>WS (字时钟)</td><td>GPIO 1</td></tr>
-                <tr><td>SCK (位时钟)</td><td>GPIO 2</td></tr>
-            </table>
-
-            <h3>💾 TF 卡模块 → STM32 (SPI2)</h3>
-            <table class="pin-table">
-                <tr><th>TF 卡模块</th><th>STM32F1/F4</th></tr>
-                <tr><td>CS</td><td>PB12 (GPIO)</td></tr>
-                <tr><td>SCK</td><td>PB13 (SPI2_SCK)</td></tr>
-                <tr><td>MISO</td><td>PB14 (SPI2_MISO)</td></tr>
-                <tr><td>MOSI</td><td>PB15 (SPI2_MOSI)</td></tr>
-                <tr><td>VCC</td><td>3.3V</td></tr>
-                <tr><td>GND</td><td>GND</td></tr>
-            </table>
-
             <p class="update-note">最后更新：2026-05-28 · 传感器库全面整理</p>
         </section>
 
