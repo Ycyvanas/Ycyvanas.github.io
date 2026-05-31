@@ -82,68 +82,6 @@ body {
 
 .intro p {
 
-/* 女娲·天部 */
-.god-card.sky {
-    border-top: 3px solid #7c6ff7;
-    color: var(--heading-color);
-}
-.god-card.sky .tag {
-    background: #f3f0ff;
-    color: #6d28d9;
-}
-
-/* 金部 */
-.god-card.metal {
-    border-top: 3px solid var(--metal);
-    color: var(--heading-color);
-}
-.god-card.metal .tag {
-    background: var(--metal-light);
-    color: var(--metal);
-}
-
-/* 木部 */
-.god-card.wood {
-    border-top: 3px solid var(--wood);
-    color: var(--heading-color);
-}
-.god-card.wood .tag {
-    background: var(--wood-light);
-    color: var(--wood);
-}
-
-/* 水部 */
-.god-card.water {
-    border-top: 3px solid var(--water);
-    color: var(--heading-color);
-}
-.god-card.water .tag {
-    background: var(--water-light);
-    color: var(--water);
-}
-
-/* 火部 */
-.god-card.fire {
-    border-top: 3px solid var(--fire);
-    color: var(--heading-color);
-}
-.god-card.fire .tag {
-    background: var(--fire-light);
-    color: var(--fire);
-}
-
-/* 土部 */
-.god-card.earth {
-    border-top: 3px solid var(--earth);
-    color: var(--heading-color);
-}
-.god-card.earth .tag {
-    background: var(--earth-light);
-    color: var(--earth);
-}
-    margin-bottom: 15px;
-}
-
 .intro strong {
     color: var(--text-color);
 }
@@ -222,6 +160,66 @@ body {
     font-size: 1.3rem;
     margin-bottom: 8px;
     flex-shrink: 0;
+}
+
+/* 女娲·天部 */
+.god-card.sky {
+    box-shadow: inset 0 3px 0 0 #7c6ff7;
+    color: var(--heading-color);
+}
+.god-card.sky .tag {
+    background: #f3f0ff;
+    color: #6d28d9;
+}
+
+/* 金部 */
+.god-card.metal {
+    box-shadow: inset 0 3px 0 0 var(--metal);
+    color: var(--heading-color);
+}
+.god-card.metal .tag {
+    background: var(--metal-light);
+    color: var(--metal);
+}
+
+/* 木部 */
+.god-card.wood {
+    box-shadow: inset 0 3px 0 0 var(--wood);
+    color: var(--heading-color);
+}
+.god-card.wood .tag {
+    background: var(--wood-light);
+    color: var(--wood);
+}
+
+/* 水部 */
+.god-card.water {
+    box-shadow: inset 0 3px 0 0 var(--water);
+    color: var(--heading-color);
+}
+.god-card.water .tag {
+    background: var(--water-light);
+    color: var(--water);
+}
+
+/* 火部 */
+.god-card.fire {
+    box-shadow: inset 0 3px 0 0 var(--fire);
+    color: var(--heading-color);
+}
+.god-card.fire .tag {
+    background: var(--fire-light);
+    color: var(--fire);
+}
+
+/* 土部 */
+.god-card.earth {
+    box-shadow: inset 0 3px 0 0 var(--earth);
+    color: var(--heading-color);
+}
+.god-card.earth .tag {
+    background: var(--earth-light);
+    color: var(--earth);
 }
 
 .god-card .tag {
