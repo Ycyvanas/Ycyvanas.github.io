@@ -182,17 +182,15 @@
             <h2>项目进展</h2>
 
             <h3>📹 ycycam — 智能摄像头系统</h3>
-
-            <p>基于 ESP32 的智能摄像头项目， 硬件JPEG编码采集图像，实时状态指示在ST7789 240x240 LCD屏幕上，MJPEG over HTTP传输方式提供高清Web端视频流。支持完整的摄像头参数控制功能。
-</p>
+            <p>基于 ESP32 的智能摄像头项目。硬件 JPEG 编码采集图像，ST7789 240×240 LCD 实时状态显示，MJPEG over HTTP 提供高清 Web 端视频流，支持完整的摄像头参数远程控制。</p>
             <ul>
-                <li>OV3660摄像头驱动</li>
+                <li>OV3660 摄像头驱动</li>
                 <li>WiFi 图像传输与远程控制</li>
                 <li>低功耗模式优化</li>
             </ul>
 
             <h3>📡 ycycam-udp — UDP 智能监测系统</h3>
-            <p>低延迟、高帧率的WiFi视频传输方案，专为ESP32-S3设计，集成 **YOLOv8m** 实时物体检测和人脸检测功能。。</p>
+            <p>低延迟、高帧率的 WiFi 视频传输方案，专为 ESP32-S3 设计，集成 <strong>YOLOv8m</strong> 实时物体检测与人脸检测功能。</p>
             <ul>
                 <li>基于 UDP 的轻量级传输协议</li>
                 <li>丢包重传与流量控制机制</li>
@@ -200,17 +198,35 @@
             </ul>
 
             <h2>发展路线</h2>
-            <ul>
-                <li>✅ 多平台开发环境搭建 (51/STM32/ESP32/Linux)</li>
-                <li>✅ 基础传感器驱动与数据采集</li>
-                <li>✅ ycycam 摄像头驱动与图像传输</li>
-                <li>✅ UDP 传输协议优化</li>
-                <li>🔄 AI 边缘推理集成（进行中）</li>
-                <li>⏳ 传感器网络与多设备协同</li>
-                <li>⏳ 设备语义模型统一抽象</li>
-            </ul>
 
-            <p class="update-note">最后更新：2026-05-31 · 扶桑文档体系建立</p>
+            <div class="roadmap">
+                <h3>🟢 第一阶段 · 基础建设 <span class="roadmap-status">已完成</span></h3>
+                <ul>
+                    <li>多平台开发环境搭建（51 / STM32 / ESP32 / Linux）</li>
+                    <li>基础传感器驱动与数据采集（40+ 传感器）</li>
+                    <li>扶桑文档体系建立（入门 / 开发板 / 传感器 / 通讯协议）</li>
+                </ul>
+
+                <h3>🟢 第二阶段 · 图像与传输 <span class="roadmap-status">已完成</span></h3>
+                <ul>
+                    <li>ycycam — 摄像头驱动与 MJPEG 视频流</li>
+                    <li>ycycam-udp — UDP 协议优化，低延迟传输</li>
+                </ul>
+
+                <h3>🟡 第三阶段 · 边缘智能 <span class="roadmap-status">进行中</span></h3>
+                <ul>
+                    <li>AI 边缘推理集成（YOLO / TensorRT / 轻量大模型）</li>
+                    <li>设备语义模型统一抽象（物模型 / 数据点机制）</li>
+                </ul>
+
+                <h3>⚪ 第四阶段 · 协同网络 <span class="roadmap-status">规划中</span></h3>
+                <ul>
+                    <li>多传感器网络与多设备协同</li>
+                    <li>Agent 可调度的物理执行节点体系</li>
+                </ul>
+            </div>
+
+            <p class="update-note">最后更新：2026-05-31 · 扶桑文档体系持续完善</p>
         </section>
 
         <nav class="back-nav">

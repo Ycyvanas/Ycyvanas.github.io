@@ -487,6 +487,24 @@ blockquote {
     font-style: italic;
 }
 
+/* 发展路线 */
+.roadmap h3 {
+    font-size: 1rem;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    color: var(--heading-color);
+}
+.roadmap .roadmap-status {
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+    font-weight: normal;
+    margin-left: 0.5em;
+}
+.roadmap ul {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+}
+
 /* 更新标记 */
 .update-note {
     text-align: right;
