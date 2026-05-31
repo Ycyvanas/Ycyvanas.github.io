@@ -381,6 +381,122 @@ blockquote {
     color: var(--water);
 }
 
+/* 文档卡片网格 */
+.doc-links {
+    margin: 25px 0 30px;
+}
+.doc-links h2 {
+    margin-bottom: 20px !important;
+}
+.doc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+@media (max-width: 600px) {
+    .doc-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.doc-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.doc-card:hover {
+    border-color: var(--wood);
+    background: var(--wood-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.doc-icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+.doc-title {
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: var(--wood);
+    width: 100%;
+}
+.doc-desc {
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    width: 100%;
+}
+
+/* 规格速查表格 */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 20px;
+    font-size: 0.95rem;
+}
+.spec-table th {
+    background: var(--wood-light);
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 2px solid var(--wood);
+    color: var(--wood);
+    font-weight: bold;
+}
+.spec-table td {
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border-color);
+}
+.spec-table tr:hover td {
+    background: rgba(46, 125, 50, 0.04);
+}
+
+/* 学习路线 */
+.learning-path {
+    background: var(--bh-color, var(--wood-light));
+    border: 1px dashed var(--wood);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 15px 0 25px;
+    text-align: center;
+}
+.learning-path h4 {
+    margin-bottom: 8px;
+    color: var(--wood);
+}
+.path-diagram {
+    font-family: "Noto Serif SC", monospace;
+    font-size: 1rem;
+    color: var(--wood);
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin: 8px 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+    line-height: 1.8;
+}
+.path-note {
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    font-style: italic;
+}
+
+/* 更新标记 */
+.update-note {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    margin-top: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
 /* 响应式 */
 @media (max-width: 768px) {
     .title {

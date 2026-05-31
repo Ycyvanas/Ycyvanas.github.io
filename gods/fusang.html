@@ -17,76 +17,169 @@
         <section class="god-content">
             <h2>神木缘起</h2>
             <p>扶桑，上古神木，日出其下。正如神木扎根大地、向阳而生，扶桑专注于 AIoT 开发领域，在人工智能与物联网的交汇处深耕，让万物智联。</p>
+            <p>在大模型与 AI Agent 时代，嵌入式开发正从「以代码为中心」转向「以智能体协同为核心」。扶桑以此为志——让每一块开发板、每一个传感器，都成为 Agent 可感知、可调度、可推理的物理执行节点。</p>
+
+            <div class="doc-links">
+                <h2>📚 扶桑文档</h2>
+                <div class="doc-grid">
+                    <a href="../docs/fusang_embedding/Agent时代的嵌入式开发入门.md" class="doc-card" target="_blank">
+                        <span class="doc-icon">📖</span>
+                        <span class="doc-title">Agent时代的嵌入式开发入门</span>
+                        <span class="doc-desc">五大能力体系 · 从工具链到语义模型</span>
+                    </a>
+                    <a href="../docs/fusang_embedding/常见开发板.md" class="doc-card" target="_blank">
+                        <span class="doc-icon">🔧</span>
+                        <span class="doc-title">常见开发板</span>
+                        <span class="doc-desc">六阶段学习路线 · 从51到Jetson</span>
+                    </a>
+                    <a href="../docs/fusang_embedding/常见传感器.md" class="doc-card" target="_blank">
+                        <span class="doc-icon">📡</span>
+                        <span class="doc-title">常见传感器</span>
+                        <span class="doc-desc">40+传感器手册 · 引脚与接线速查</span>
+                    </a>
+                    <a href="../docs/fusang_embedding/通讯接口与协议.md" class="doc-card" target="_blank">
+                        <span class="doc-icon">🔗</span>
+                        <span class="doc-title">通讯接口与协议</span>
+                        <span class="doc-desc">物理层→协议层→应用层 · 三层体系</span>
+                    </a>
+                </div>
+            </div>
+
+            <h2>Agent时代嵌入式开发</h2>
+            <p>在 AI Agent 范式下，嵌入式开发能力体系归纳为五个方面——</p>
+
+            <ol>
+                <li><strong>「编译—烧录—监测」闭环</strong> — 从传统工具链扩展为「生成—部署—观测—反馈」动态闭环，让系统状态可被 Agent 解析与诊断。</li>
+                <li><strong>资源约束认知</strong> — 理解算力、存储、能耗边界，评估模型部署的工程可行性。</li>
+                <li><strong>异构通信协议分层</strong> — 板级外设（I2C/SPI/UART）→ 局域/广域网（Wi-Fi/BLE/MQTT）→ 跨生态互联（Matter），三层贯通。</li>
+                <li><strong>感知数据建模</strong> — 传感器物理机理 + 数据预处理（标定/滤波/去噪），实现物理信号到结构化数据的稳定映射。</li>
+                <li><strong>设备语义抽象</strong> — 通过物模型/数据点机制，将硬件能力映射为统一接口，为 Agent 提供一致操作空间。</li>
+            </ol>
+            <p><a href="../docs/fusang_embedding/Agent时代的嵌入式开发入门.md" target="_blank">📄 阅读全文 →</a></p>
 
             <h2>开发板矩阵</h2>
+            <p>从单片机入门到边缘 AI，六阶段学习路线覆盖嵌入式开发全技术栈。
+            <a href="../docs/fusang_embedding/常见开发板.md" target="_blank">📄 完整开发板手册 →</a></p>
+
+            <h3>第一阶段 · 嵌入式基础</h3>
             <ul>
-                <li><strong>STC89C52</strong> - 经典 51 内核，基础外设与协议学习</li>
-                <li><strong>STM32F103</strong> - ARM Cortex-M3，工业控制与传感器采集</li>
-                <li><strong>ESP32-S3</strong> - WiFi/BLE 无线 SoC，AIoT 边缘智能</li>
-                <li><strong>Luckfox-Pico</strong> - 微型 Linux 开发板，轻量级边缘计算</li>
-                <li><strong>RP2040</strong> - 双核 Cortex-M0+，PIO 灵活外设，微控制器新秀</li>
-                <li><strong>Xilinx Artix7 XC7A35T</strong> - FPGA 开发板，硬件可编程逻辑</li>
+                <li><strong>STC89C52RC</strong> — 经典 8051 内核，GPIO/中断/定时器/UART，建立底层认知</li>
             </ul>
 
-            <h2>核心领域</h2>
+            <h3>第二阶段 · 主流 MCU</h3>
             <ul>
-                <li><strong>AIoT 系统开发</strong> - 人工智能与物联网深度融合</li>
-                <li><strong>嵌入式 AI</strong> - 端侧推理、边缘智能、低功耗 AI</li>
-                <li><strong>传感器驱动与数据采集</strong> - 各类传感器的驱动开发与数据融合</li>
-                <li><strong>多平台固件开发</strong> - MCU (51/STM32/ESP32) + MPU (Linux) 全栈</li>
+                <li><strong>STM32F103</strong> — ARM Cortex-M3，外设驱动/RTOS/工业控制，嵌入式岗位核心技能</li>
+                <li><strong>CH32F103</strong> — 国产 MCU，国产生态入门之选</li>
+                <li><strong>Raspberry Pi Pico (RP2040)</strong> — 双核 Cortex-M0+，PIO 自定义协议，创客与快速原型</li>
             </ul>
+
+            <h3>第三阶段 · AIoT 无线</h3>
+            <ul>
+                <li><strong>ESP32-S3</strong> — Wi-Fi/BLE 双模，AI 向量指令，连接物理设备与云端智能的关键节点</li>
+            </ul>
+
+            <h3>第四阶段 · 嵌入式 Linux</h3>
+            <ul>
+                <li><strong>Luckfox Pico</strong> — 微型 Linux 开发板，内置 NPU，可运行轻量级 Agent</li>
+            </ul>
+
+            <h3>第五阶段 · FPGA</h3>
+            <ul>
+                <li><strong>Tang Nano 9K</strong> — FPGA 入门首选，Verilog/数字逻辑/HDMI 显示</li>
+                <li><strong>A7-Lite (XC7A35T)</strong> — 工业级 FPGA，高速接口/DSP/图像处理</li>
+            </ul>
+
+            <h3>第六阶段 · 边缘 AI</h3>
+            <ul>
+                <li><strong>Jetson Nano / Orin Nano</strong> — GPU 计算，PyTorch/TensorRT/YOLO/大模型推理，构建智能体</li>
+            </ul>
+
+            <div class="learning-path">
+                <h4>🗺️ 推荐学习路线</h4>
+                <pre class="path-diagram">STC89C52 ──→ STM32 / RP2040 ──→ ESP32-S3 ──→ Luckfox Pico ──→ FPGA ──→ Jetson</pre>
+                <p class="path-note">从硬件控制起步，逐级攀登至多模态 Agent 系统</p>
+            </div>
+
+            <h2>通讯接口与协议</h2>
+            <p>通信体系是嵌入式系统的「神经网络」。从引脚电平到云端协议，分为三层结构：
+            <a href="../docs/fusang_embedding/通讯接口与协议.md" target="_blank">📄 全文速查 →</a></p>
+
+            <h3>🔌 物理接口层</h3>
+            <table class="spec-table">
+                <tr><th>接口</th><th>本质</th><th>典型应用</th></tr>
+                <tr><td><strong>GPIO</strong></td><td>最底层数字开关</td><td>LED/按键/继电器/中断</td></tr>
+                <tr><td><strong>PWM</strong></td><td>占空比表达模拟量</td><td>LED调光/电机调速/舵机</td></tr>
+                <tr><td><strong>ADC / DAC</strong></td><td>模拟↔数字桥梁</td><td>传感器采样/音频/电池管理</td></tr>
+                <tr><td><strong>JTAG / SWD</strong></td><td>芯片级控制通道</td><td>调试/烧录/寄存器访问</td></tr>
+            </table>
+
+            <h3>📡 板级通信协议</h3>
+            <table class="spec-table">
+                <tr><th>协议</th><th>特点</th><th>典型外设</th></tr>
+                <tr><td><strong>UART</strong></td><td>异步全双工，无时钟线</td><td>串口调试/GPS/AT指令</td></tr>
+                <tr><td><strong>SPI</strong></td><td>同步高速全双工，MHz级</td><td>Flash/LCD/高速传感器</td></tr>
+                <tr><td><strong>I²C</strong></td><td>低速多从机，双线总线</td><td>IMU/RTC/EEPROM</td></tr>
+                <tr><td><strong>CAN</strong></td><td>差分抗干扰，多节点广播</td><td>汽车电子/BMS/工业控制</td></tr>
+                <tr><td><strong>OneWire</strong></td><td>单数据线，唯一64位ID</td><td>DS18B20 温度传感器</td></tr>
+            </table>
+
+            <h3>🌐 网络与无线协议</h3>
+            <table class="spec-table">
+                <tr><th>协议</th><th>特性</th><th>适用场景</th></tr>
+                <tr><td><strong>Wi-Fi</strong></td><td>高带宽，局域网</td><td>ESP32 系列 IoT 设备</td></tr>
+                <tr><td><strong>BLE</strong></td><td>低功耗，手机生态</td><td>可穿戴/传感器节点</td></tr>
+                <tr><td><strong>MQTT</strong></td><td>发布订阅，弱网友好</td><td>IoT 云平台/远程控制</td></tr>
+                <tr><td><strong>LoRa</strong></td><td>超远距离，极低功耗</td><td>农业监测/远程传感</td></tr>
+                <tr><td><strong>Ethernet</strong></td><td>TCP/UDP/IP 协议栈</td><td>Web 服务/工业网关</td></tr>
+            </table>
 
             <h2>传感器库</h2>
             <p>已驱动各类传感器 40+ 种，覆盖环境感知、运动检测、人机交互、通信定位等方向。
-            <a href="../docs/sensors.md" target="_blank">📄 查阅完整传感器手册 →</a></p>
+            <a href="../docs/fusang_embedding/常见传感器.md" target="_blank">📄 查阅完整传感器手册（含引脚接线表） →</a></p>
 
             <h3>🌡️ 环境感知</h3>
             <ul>
-                <li><strong>温湿度</strong> - DHT11、DS18B20</li>
-                <li><strong>光照</strong> - 光敏模块 (KY-018)、光折断传感器 (KY-010)</li>
-                <li><strong>气体/火焰</strong> - 火焰传感器 (KY-026)</li>
-                <li><strong>土壤湿度</strong> - FC-28</li>
-                <li><strong>水位</strong> - 水位传感器</li>
+                <li><strong>温湿度</strong> — DHT11、DS18B20</li>
+                <li><strong>光照</strong> — 光敏模块 (KY-018)、光折断传感器 (KY-010)</li>
+                <li><strong>气体/火焰</strong> — 火焰传感器 (KY-026)</li>
+                <li><strong>土壤湿度</strong> — FC-28</li>
+                <li><strong>水位</strong> — 水位传感器</li>
             </ul>
 
             <h3>📐 运动与姿态</h3>
             <ul>
-                <li><strong>加速度/陀螺仪</strong> - MPU6050 (I2C)</li>
-                <li><strong>超声波测距</strong> - HC-SR04</li>
-                <li><strong>红外避障/循迹</strong> - KY-032、KY-033</li>
-                <li><strong>倾斜/振动/敲击</strong> - KY-020、KY-002、KY-031</li>
-                <li><strong>霍尔/磁场</strong> - SS49E、A3144、KY-003、KY-021、KY-025、KY-035</li>
-                <li><strong>水银开关</strong> - KY-017</li>
+                <li><strong>加速度/陀螺仪</strong> — MPU6050 (I2C)</li>
+                <li><strong>超声波测距</strong> — HC-SR04</li>
+                <li><strong>红外避障/循迹</strong> — KY-032、KY-033</li>
+                <li><strong>倾斜/振动/敲击</strong> — KY-020、KY-002、KY-031</li>
+                <li><strong>霍尔/磁场</strong> — SS49E、A3144、KY-003/021/025/035</li>
+                <li><strong>水银开关</strong> — KY-017</li>
             </ul>
 
             <h3>🎮 人机交互</h3>
             <ul>
-                <li><strong>按键</strong> - 按键模块 (KY-004)</li>
-                <li><strong>旋转编码器</strong> - KY-040</li>
-                <li><strong>PS2摇杆</strong> - KY-023 (模拟X/Y+数字Z)</li>
-                <li><strong>触摸</strong> - TTP223 / KY-036</li>
-                <li><strong>红外遥控</strong> - VS1838B 接收 + KY-005 发射，21键遥控器</li>
-                <li><strong>麦克风</strong> - KY-037/KY-038 (大/小麦克风)、INMP441 (I2S 数字麦克风)</li>
+                <li><strong>按键/旋钮/摇杆</strong> — KY-004、KY-040、KY-023</li>
+                <li><strong>触摸</strong> — TTP223 / KY-036</li>
+                <li><strong>红外遥控</strong> — VS1838B 接收 + KY-005 发射，21键遥控器</li>
+                <li><strong>麦克风</strong> — KY-037/KY-038 模拟麦克风、INMP441 I2S 数字麦克风</li>
             </ul>
 
             <h3>⚡ 执行与指示</h3>
             <ul>
-                <li><strong>蜂鸣器</strong> - 有源 (KY-012) / 无源 (KY-006)</li>
-                <li><strong>LED</strong> - 贴片 RGB (KY-009)、全彩 (KY-016)、自动闪烁 (KY-034)</li>
-                <li><strong>激光</strong> - KY-008</li>
-                <li><strong>继电器</strong> - KY-019</li>
-                <li><strong>电机测速</strong> - KY-010 光折断传感器</li>
+                <li><strong>蜂鸣器</strong> — 有源 (KY-012) / 无源 (KY-006)</li>
+                <li><strong>LED</strong> — 贴片RGB (KY-009)、全彩 (KY-016)、自动闪烁 (KY-034)</li>
+                <li><strong>激光 / 继电器</strong> — KY-008、KY-019</li>
             </ul>
 
             <h3>💾 存储与时钟</h3>
             <ul>
-                <li><strong>SD/TF卡</strong> - V474 模块，SPI 接口 (CS/SCK/MISO/MOSI)</li>
-                <li><strong>RTC</strong> - DS1302 实时时钟</li>
+                <li><strong>SD/TF卡</strong> — V474 模块，SPI 接口</li>
+                <li><strong>RTC</strong> — DS1302 实时时钟</li>
             </ul>
 
             <h2>项目进展</h2>
 
-            <h3>📹 ycycam - 智能摄像头系统</h3>
+            <h3>📹 ycycam — 智能摄像头系统</h3>
             <p>基于 ESP32 的智能摄像头项目，支持多种图像采集与传输模式。</p>
             <ul>
                 <li>OV2640 / OV5640 摄像头驱动</li>
@@ -94,7 +187,7 @@
                 <li>低功耗模式优化</li>
             </ul>
 
-            <h3>📡 ycycam-udp - UDP 传输协议</h3>
+            <h3>📡 ycycam-udp — UDP 传输协议</h3>
             <p>为 ycycam 定制的 UDP 传输层，实现低延迟、高可靠的图像数据流传输。</p>
             <ul>
                 <li>基于 UDP 的轻量级传输协议</li>
@@ -110,9 +203,10 @@
                 <li>🔄 UDP 传输协议优化（进行中）</li>
                 <li>🔄 AI 边缘推理集成（进行中）</li>
                 <li>⏳ 传感器网络与多设备协同</li>
+                <li>⏳ 设备语义模型统一抽象</li>
             </ul>
 
-            <p class="update-note">最后更新：2026-05-28 · 传感器库全面整理</p>
+            <p class="update-note">最后更新：2026-05-31 · 扶桑文档体系建立</p>
         </section>
 
         <nav class="back-nav">
@@ -124,5 +218,4 @@
         </footer>
     </div>
 </body>
-</html>y>
 </html>
