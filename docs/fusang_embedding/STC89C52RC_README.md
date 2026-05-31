@@ -1,4 +1,4 @@
-# 嵌入式开发流程（以 STC89C52RC + Windows 为例）
+# STC89C52RC开发入门
 
 嵌入式开发的本质是将软件部署到硬件设备上运行。无论是 8051、STM32、ESP32 还是 FPGA SoC，其开发流程都可以抽象为：
 
@@ -62,7 +62,7 @@ PlatformIO
 例如工程目录：
 
 ```powershell
-C:\Users\dengx\Documents\PlatformIO\Projects\stc89
+C:\Users\xxx\Documents\PlatformIO\Projects\stc89
 ```
 
 ---
@@ -72,7 +72,7 @@ C:\Users\dengx\Documents\PlatformIO\Projects\stc89
 在项目目录执行：
 
 ```powershell
-C:\Users\dengx\.platformio\penv\Scripts\platformio.exe run --environment STC89C52RC
+C:\Users\xxx\.platformio\penv\Scripts\platformio.exe run --environment STC89C52RC
 ```
 
 编译成功后会生成：
@@ -219,7 +219,7 @@ STC89C52RC 仅提供一组硬件 UART：
 烧录完成后，可启动串口监测：
 
 ```powershell
-C:\Users\dengx\.platformio\penv\Scripts\platformio.exe device monitor --environment STC89C52RC
+C:\Users\xxx\.platformio\penv\Scripts\platformio.exe device monitor --environment STC89C52RC
 ```
 
 典型输出：
