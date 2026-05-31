@@ -84,7 +84,7 @@ body {
 
 /* 女娲·天部 */
 .god-card.sky {
-    border-top: 3px solid #7c6ff7;
+    box-shadow: inset 0 3px 0 0 #7c6ff7;
     color: var(--heading-color);
 }
 .god-card.sky .tag {
@@ -94,7 +94,7 @@ body {
 
 /* 金部 */
 .god-card.metal {
-    border-top: 3px solid var(--metal);
+    box-shadow: inset 0 3px 0 0 var(--metal);
     color: var(--heading-color);
 }
 .god-card.metal .tag {
@@ -104,7 +104,7 @@ body {
 
 /* 木部 */
 .god-card.wood {
-    border-top: 3px solid var(--wood);
+    box-shadow: inset 0 3px 0 0 var(--wood);
     color: var(--heading-color);
 }
 .god-card.wood .tag {
@@ -114,7 +114,7 @@ body {
 
 /* 水部 */
 .god-card.water {
-    border-top: 3px solid var(--water);
+    box-shadow: inset 0 3px 0 0 var(--water);
     color: var(--heading-color);
 }
 .god-card.water .tag {
@@ -124,7 +124,7 @@ body {
 
 /* 火部 */
 .god-card.fire {
-    border-top: 3px solid var(--fire);
+    box-shadow: inset 0 3px 0 0 var(--fire);
     color: var(--heading-color);
 }
 .god-card.fire .tag {
@@ -134,7 +134,7 @@ body {
 
 /* 土部 */
 .god-card.earth {
-    border-top: 3px solid var(--earth);
+    box-shadow: inset 0 3px 0 0 var(--earth);
     color: var(--heading-color);
 }
 .god-card.earth .tag {
