@@ -182,23 +182,20 @@
             <h2>项目进展</h2>
 
             <h3>📹 ycycam — 智能摄像头系统</h3>
-            <p>基于 ESP32 的端侧摄像头方案，打通了「采集 → 编码 → 推流 → 控制」完整链路。OV3660 硬件 JPEG 编码 + MJPEG over HTTP 推流，浏览器即看即用，无需客户端装任何东西。ST7789 LCD 实时显示设备状态与帧率。</p>
+            <p>基于 ESP32 的端侧摄像头方案，打通了「采集 → 编码 → 推流 → 控制」完整链路。</p>
             <ul>
                 <li><strong>摄像头驱动</strong> — OV3660，300 万像素，硬件 JPEG 直出</li>
                 <li><strong>视频推流</strong> — MJPEG over HTTP，多客户端同时观看</li>
                 <li><strong>远程控制</strong> — 亮度 / 对比度 / 饱和度 / 白平衡等参数 Web 调节</li>
                 <li><strong>状态面板</strong> — ST7789 240×240 LCD，实时帧率、客户端数、WiFi 信号</li>
-                <li><strong>低功耗</strong> — 空闲时降频 + Light Sleep，适配电池供电场景</li>
             </ul>
 
             <h3>📡 ycycam-udp — UDP 智能监测系统</h3>
-            <p>解决 HTTP 推流延迟高、带宽浪费的问题，基于 UDP 自建轻量传输协议。ESP32-S3 端 PSRAM 缓冲 + 丢包重传 + 流量控制，实现低延迟、高帧率的实时视频流。集成 <strong>YOLOv8m</strong> 端侧推理，支持物体检测与人脸识别，结果随视频流实时回传。</p>
+            <p>解决 HTTP 推流延迟高、带宽浪费的问题，基于 UDP 自建轻量传输协议。</p>
             <ul>
-                <li><strong>UDP 传输</strong> — 自研轻量协议，延迟远低于 MJPEG over HTTP</li>
-                <li><strong>可靠性层</strong> — 丢包检测 / 选择性重传 / 自适应码率</li>
-                <li><strong>AI 推理</strong> — YOLOv8m 端侧运行，实时检测框叠加视频流</li>
                 <li><strong>硬件平台</strong> — ESP32-S3，双核 + PSRAM + 向量指令加速</li>
-                <li><strong>多客户端</strong> — 单设备同时向多个接收端推流</li>
+                <li><strong>UDP 传输</strong> — 轻量视频流协议，快速传输到服务器端</li>
+                <li><strong>服务器AI推理</strong> — YOLOv8m 端侧运行，实时检测框叠加视频流</li>
             </ul>
 
             <h2>发展路线</h2>
