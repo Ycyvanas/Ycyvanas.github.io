@@ -81,6 +81,8 @@ body {
 }
 
 .intro p {
+    margin-bottom: 1em;
+}
 
 /* 女娲·天部 */
 .god-card.sky {
