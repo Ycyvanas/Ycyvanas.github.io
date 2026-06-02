@@ -62,10 +62,20 @@
                         <span class="doc-title">STM32F103引脚说明</span>
                         <span class="doc-desc">LQFP48封装 · 完整引脚功能手册</span>
                     </a>
+                    <a href="../docs/fusang_embedding/ESP32S3CAM_README.md" class="doc-card" target="_blank">
+                        <span class="doc-icon">📷</span>
+                        <span class="doc-title">ESP32-S3-CAM开发入门</span>
+                        <span class="doc-desc">ESP-IDF闭环 · Agent化编译烧录监测</span>
+                    </a>
                     <a href="../docs/fusang_embedding/ESP32S3CAM_PIN.md" class="doc-card" target="_blank">
                         <span class="doc-icon">📌</span>
                         <span class="doc-title">ESP32-S3-CAM引脚说明</span>
                         <span class="doc-desc">AIoT摄像头模组 · DVP+LCD双接口</span>
+                    </a>
+                    <a href="../docs/fusang_embedding/ycycam-udp-demo/README.md" class="doc-card" target="_blank">
+                        <span class="doc-icon">🚀</span>
+                        <span class="doc-title">ycycam-udp 示例工程</span>
+                        <span class="doc-desc">ESP32-S3 UDP视频流 · Web接收端 + YOLOv8m</span>
                     </a>
                 </div>
             </div>
@@ -99,7 +109,7 @@
 
             <h3>第三阶段 · AIoT 无线</h3>
             <ul>
-                <li><strong>ESP32-S3</strong> — Wi-Fi/BLE 双模，AI 向量指令，连接物理设备与云端智能的关键节点</li>
+                <li><strong>ESP32-S3 / ESP32-S3-CAM</strong> — Wi-Fi/BLE 双模，AI 向量指令，摄像头与 LCD 接口，适合构建端侧视觉节点</li>
             </ul>
 
             <h3>第四阶段 · 嵌入式 Linux</h3>
@@ -134,6 +144,7 @@
                 <tr><td><strong>PWM</strong></td><td>占空比表达模拟量</td><td>LED调光/电机调速/舵机</td></tr>
                 <tr><td><strong>ADC / DAC</strong></td><td>模拟↔数字桥梁</td><td>传感器采样/音频/电池管理</td></tr>
                 <tr><td><strong>JTAG / SWD</strong></td><td>芯片级控制通道</td><td>调试/烧录/寄存器访问</td></tr>
+                <tr><td><strong>USB</strong></td><td>高速差分通信接口</td><td>枚举/热插拔/USB CDC日志</td></tr>
             </table>
 
             <h3>📡 板级通信协议</h3>
@@ -144,6 +155,7 @@
                 <tr><td><strong>I²C</strong></td><td>低速多从机，双线总线</td><td>IMU/RTC/EEPROM</td></tr>
                 <tr><td><strong>CAN</strong></td><td>差分抗干扰，多节点广播</td><td>汽车电子/BMS/工业控制</td></tr>
                 <tr><td><strong>OneWire</strong></td><td>单数据线，唯一64位ID</td><td>DS18B20 温度传感器</td></tr>
+                <tr><td><strong>SDIO</strong></td><td>SD卡高速访问协议</td><td>存储扩展/高速数据记录</td></tr>
             </table>
 
             <h3>🌐 网络与无线协议</h3>
@@ -152,6 +164,8 @@
                 <tr><td><strong>Wi-Fi</strong></td><td>高带宽，局域网</td><td>ESP32 系列 IoT 设备</td></tr>
                 <tr><td><strong>BLE</strong></td><td>低功耗，手机生态</td><td>可穿戴/传感器节点</td></tr>
                 <tr><td><strong>MQTT</strong></td><td>发布订阅，弱网友好</td><td>IoT 云平台/远程控制</td></tr>
+                <tr><td><strong>HTTP</strong></td><td>请求响应，生态成熟</td><td>Web配置/状态接口/MJPEG流</td></tr>
+                <tr><td><strong>Modbus</strong></td><td>工业设备通用语义</td><td>PLC/仪表/工业网关</td></tr>
                 <tr><td><strong>LoRa</strong></td><td>超远距离，极低功耗</td><td>农业监测/远程传感</td></tr>
                 <tr><td><strong>Ethernet</strong></td><td>TCP/UDP/IP 协议栈</td><td>Web 服务/工业网关</td></tr>
             </table>
@@ -211,11 +225,13 @@
             </ul>
 
             <h3>📡 ycycam-udp — UDP 智能监测系统</h3>
-            <p>解决 HTTP 推流延迟高、带宽浪费的问题，基于 UDP 自建轻量传输协议。</p>
+            <p>面向 ESP32-S3 的低延迟、高帧率 WiFi 视频传输方案，基于 UDP 自建轻量传输协议，并在服务器侧接入 AI 实时检测。</p>
             <ul>
-                <li><strong>硬件平台</strong> — ESP32-S3，双核 + PSRAM + 向量指令加速</li>
-                <li><strong>UDP 传输</strong> — 轻量视频流协议，快速传输到服务器端</li>
-                <li><strong>服务器AI推理</strong> — YOLOv8m 端侧运行，实时检测框叠加视频流</li>
+                <li><strong>硬件平台</strong> — ESP32-S3，双核 + PSRAM + 向量指令加速，OV5640 摄像头采集</li>
+                <li><strong>UDP 传输</strong> — 轻量视频流协议，快速传输到服务器端，支持 FPS / 带宽 / 丢帧率统计</li>
+                <li><strong>Web接收端</strong> — 浏览器 MJPEG 实时查看，支持水平/垂直翻转、90°旋转、开始/停止视频流</li>
+                <li><strong>AI实时检测</strong> — YOLOv8m 物体检测 + OpenCV 人脸检测，支持检测开关与结果缓存</li>
+                <li><strong>工程化工具</strong> — quick_start / build / flash_and_monitor 脚本，支持 Python、C++、Web 多种接收方案</li>
             </ul>
 
             <h2>发展路线</h2>
@@ -232,10 +248,12 @@
                 <ul>
                     <li>ycycam — 摄像头驱动与 MJPEG 视频流</li>
                     <li>ycycam-udp — UDP 协议优化，低延迟传输</li>
+                    <li>ESP32-S3-CAM 开发闭环与引脚文档沉淀</li>
                 </ul>
 
                 <h3>🟡 第三阶段 · 边缘智能 <span class="roadmap-status">进行中</span></h3>
                 <ul>
+                    <li>YOLOv8m 实时检测接入，检测开关、截图、方向变换等 Web 交互完善</li>
                     <li>AI 边缘推理集成（YOLO / TensorRT / 轻量大模型）</li>
                     <li>设备语义模型统一抽象（物模型 / 数据点机制）</li>
                 </ul>
@@ -247,7 +265,7 @@
                 </ul>
             </div>
 
-            <p class="update-note">最后更新：2026-05-31 · 新增开发板引脚手册与入门指南</p>
+            <p class="update-note">最后更新：2026-06-03 · 同步 ESP32-S3-CAM 入门与 ycycam-udp 示例工程</p>
         </section>
 
         <nav class="back-nav">

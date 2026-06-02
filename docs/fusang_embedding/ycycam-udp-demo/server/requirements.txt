@@ -1,0 +1,11 @@
+# ycycam-udp 接收端依赖
+# 基础依赖 (必须)
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+
+# 物品识别 (已启用)
+ultralytics>=8.0.200        # YOLOv8
+
+# 人脸识别 (可选，需要时取消注释)
+# face-recognition>=1.3.0     # 人脸识别
+# mtcnn>=0.1.1                # MTCNN人脸检测

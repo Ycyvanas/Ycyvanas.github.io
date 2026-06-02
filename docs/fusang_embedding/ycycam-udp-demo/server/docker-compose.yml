@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  ycycam-server:
+    build: .
+    container_name: ycycam-udp-server
+    restart: unless-stopped
+    ports:
+      - "8000:8000/tcp"   # Web界面
+      - "5000:5000/udp"   # UDP视频流
+    environment:
+      - TZ=Asia/Shanghai
+      - PYTHONUNBUFFERED=1
+    # 网络模式：如果ESP32和Docker宿主机在同一网络，用host模式更简单
+    # network_mode: "host"
+    # 如需限制资源：
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '2.0'
+    #       memory: 512M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/status"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,281 @@
+----------------------------------------
+Exception occurred during processing of request from ('192.168.2.31', 52236)
+----------------------------------------
+Exception occurred during processing of request from ('192.168.2.31', 50411)
+Traceback (most recent call last):
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 426, in serve_video_file
+    self.wfile.write(chunk)
+Traceback (most recent call last):
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 426, in serve_video_file
+    self.wfile.write(chunk)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+
+During handling of the above exception, another exception occurred:
+
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+Traceback (most recent call last):
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 766, in __init__
+    self.handle()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 440, in handle
+    self.handle_one_request()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 766, in __init__
+    self.handle()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 428, in handle_one_request
+    method()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 440, in handle
+    self.handle_one_request()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 242, in do_GET
+    self.serve_video_file()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 428, in handle_one_request
+    method()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 429, in serve_video_file
+    self.send_error(500, str(e))
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 242, in do_GET
+    self.serve_video_file()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 492, in send_error
+    self.end_headers()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 429, in serve_video_file
+    self.send_error(500, str(e))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 492, in send_error
+    self.end_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 542, in end_headers
+    self.flush_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 542, in end_headers
+    self.flush_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 546, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 546, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.2.31', 50978)
+Traceback (most recent call last):
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 426, in serve_video_file
+    self.wfile.write(chunk)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 766, in __init__
+    self.handle()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 440, in handle
+    self.handle_one_request()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 428, in handle_one_request
+    method()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 242, in do_GET
+    self.serve_video_file()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 429, in serve_video_file
+    self.send_error(500, str(e))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 492, in send_error
+    self.end_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 542, in end_headers
+    self.flush_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 546, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('192.168.2.31', 54759)
+Traceback (most recent call last):
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 426, in serve_video_file
+    self.wfile.write(chunk)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 766, in __init__
+    self.handle()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 440, in handle
+    self.handle_one_request()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 428, in handle_one_request
+    method()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 242, in do_GET
+    self.serve_video_file()
+  File "/home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/web_receiver.py", line 429, in serve_video_file
+    self.send_error(500, str(e))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 492, in send_error
+    self.end_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 542, in end_headers
+    self.flush_headers()
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/http/server.py", line 546, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/home/dx1991/anaconda3/envs/ycyserver/lib/python3.12/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+==================================================
+  ycycam-udp Web Video Receiver + 循环录像
+==================================================
+[UDP] Listening on port 5000
+[Detector] 正在加载 YOLOv8m 模型...
+[Detector] 检测线程已启动
+[Recorder] 视频存储目录: /home/dx1991/.openclaw/workspace-fusang/ycycam-udp/server/recordings
+[Recorder] 分段时长: 60 秒
+[Recorder] 最大存储: 3600 秒 (1.0 小时)
+[Recorder] 录制分辨率: (640, 480), 帧率: 15
+[Recorder] 编码器: H.264 MP4 (所有浏览器支持)
+[Recorder] 变换设置已更新: 水平翻转=False, 垂直翻转=False, 旋转=0°
+[Recorder] 录制线程已启动
+[Recorder] 录制已启动
+[Recorder] 循环录像已启动 (保留最近1小时, 每分钟一个分段)
+[Recorder] 视频格式: MP4 + mp4v 编码
+[Recorder] 初始变换: 水平翻转=False, 垂直翻转=False, 旋转=0°
+[HTTP] http://127.0.0.1:8000
+==================================================
+[Recorder] 开始新分段: video_20260517_002009.mp4
+[Info] ESP32 IP detected: 192.168.2.154
+[Recorder] 删除过期视频: video_20260516_232001.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Detector] YOLO 模型加载完成
+[Detector] 人脸分类器加载完成
+[Recorder] 变换设置已更新: 水平翻转=True, 垂直翻转=False, 旋转=0°
+[Recorder] 变换设置已更新: 水平翻转=True, 垂直翻转=True, 旋转=0°
+[Recorder] 变换设置已更新: 水平翻转=True, 垂直翻转=True, 旋转=90°
+[Recorder] 变换设置已更新: 水平翻转=True, 垂直翻转=True, 旋转=180°
+[Camera] 发送命令: wb_mode=1 到 192.168.2.154
+[Camera] 发送命令: wb_mode=2 到 192.168.2.154
+[Camera] 发送命令: wb_mode=3 到 192.168.2.154
+[Camera] 发送命令: wb_mode=4 到 192.168.2.154
+[Camera] 发送命令: wb_mode=5 到 192.168.2.154
+[Recorder] 分段 video_20260517_002009.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002109.mp4
+[Recorder] 删除过期视频: video_20260516_232101.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002109.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002209.mp4
+[Recorder] 删除过期视频: video_20260516_232201.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002209.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002309.mp4
+[Recorder] 删除过期视频: video_20260516_232301.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002309.mp4 完成，写入 889 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002409.mp4
+[Recorder] 删除过期视频: video_20260516_232401.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002409.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002509.mp4
+[Recorder] 删除过期视频: video_20260516_232501.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002509.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002610.mp4
+[Recorder] 删除过期视频: video_20260516_232601.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002610.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002710.mp4
+[Recorder] 删除过期视频: video_20260516_232701.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002710.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002810.mp4
+[Recorder] 删除过期视频: video_20260516_232801.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002810.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_002910.mp4
+[Recorder] 删除过期视频: video_20260516_232901.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_002910.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003010.mp4
+[Recorder] 删除过期视频: video_20260516_233001.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003010.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003110.mp4
+[Recorder] 删除过期视频: video_20260516_233101.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003110.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003210.mp4
+[Recorder] 删除过期视频: video_20260516_233120.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003210.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003310.mp4
+[Recorder] 删除过期视频: video_20260516_233220.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003310.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003410.mp4
+[Recorder] 删除过期视频: video_20260516_233320.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003410.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003510.mp4
+[Recorder] 删除过期视频: video_20260516_233420.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003510.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003610.mp4
+[Recorder] 删除过期视频: video_20260516_233520.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003610.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003710.mp4
+[Recorder] 删除过期视频: video_20260516_233620.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003710.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003810.mp4
+[Recorder] 删除过期视频: video_20260516_233720.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003810.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_003910.mp4
+[Recorder] 删除过期视频: video_20260516_233820.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_003910.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004010.mp4
+[Recorder] 删除过期视频: video_20260516_233920.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_004010.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004110.mp4
+[Recorder] 删除过期视频: video_20260516_234020.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_004110.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004210.mp4
+[Recorder] 删除过期视频: video_20260516_234120.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_004210.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004310.mp4
+[Recorder] 删除过期视频: video_20260516_234220.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_004310.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004410.mp4
+[Recorder] 删除过期视频: video_20260516_234320.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_004410.mp4 完成，写入 892 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004510.mp4
+[Recorder] 删除过期视频: video_20260516_234420.mp4
+[Recorder] 清理完成，删除了 1 个过期文件
+[Recorder] 分段 video_20260517_004510.mp4 完成，写入 893 帧，退出码: 0
+[Recorder] 开始新分段: video_20260517_004610.mp4
+[Recorder] 删除过期视频: video_20260516_234520.mp4
