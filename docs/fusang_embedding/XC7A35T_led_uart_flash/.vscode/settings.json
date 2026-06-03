@@ -1,0 +1,10 @@
+{
+  "verilog.linting.linter": "iverilog",
+  "files.associations": {
+    "*.v": "verilog",
+    "*.xdc": "tcl"
+  },
+  "terminal.integrated.env.windows": {
+    "VIVADO_PATH": "C:/Xilinx/Vivado/2023.2/bin"
+  }
+}
